@@ -1,0 +1,23 @@
+Raspberry pi 4 connect with I2C LCD
+
+
+#Create a new Python script:
+nano lcd_test.py
+
+Install virtual environment
+sudo apt install python3-venv -y
+
+Create a new virtual environment:
+python3 -m venv lcd_env
+
+Activate the virtual environment:
+source lcd_env/bin/activate
+
+Install rpi_lcd inside the virtual environment:
+pip install rpi_lcd
+
+Run your script inside the virtual environment:
+python lcd_test.py
+
+Deactivate the virtual environment when done:
+deactivate
