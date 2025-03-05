@@ -21,3 +21,20 @@ python lcd_test.py
 
 Deactivate the virtual environment when done:
 deactivate
+
+
+
+##Code
+
+from rpi_lcd import LCD
+import time
+
+lcd = LCD()
+
+try:
+    lcd.text("Hello, Raspberry!", 1)  # Line 1
+    lcd.text("I2C LCD Working!", 2)   # Line 2
+    time.sleep(5)  # Wait 5 seconds to see the text
+    lcd.clear()  # Clear the LCD
+except KeyboardInterrupt:
+    lcd.clear()
